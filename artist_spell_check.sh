@@ -16,7 +16,9 @@ should be the path to levenshtein distance dependency.
     -m option should be run on the first time the script runs, as it creates a music.tmp
 file at /tmp, it logs there all the artists without duplicates.
     The main function list_file processes the musics.tmp file and compare each entry/artist
-with all others, so this process can be quite long depending on the number of entries.
+with all others, so this process can be quite long depending on the number of entries. To
+shorten the processing, you can increase the background processes limit at the line 62, at
+a 16 thread processor of 3.2Ghz each, 32 processes uses up to 100% of power, have caution.
     The final log is present at /tmp/music_log.tmp.
 '
 
